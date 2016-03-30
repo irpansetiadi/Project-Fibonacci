@@ -10,19 +10,24 @@ public class JavaApplication1 {
         System.out.print("Input : ");
         int n = input.nextInt();
         int count=1;
+        int sum = 0;
         int c=1,b=1,a=0;
         while(count < n){
             if (count == 1){
-                System.out.print(c+" ");
+                //System.out.print(c+" ");
+                sum = c;
             }
             c=b+a;
             System.out.print(c+" ");
             
             a=b;
             b=c;
-        
+            
+            sum = sum+c;
+            
             count++;
         }
+        System.out.println(sum)
         System.out.println();
     }
 }
